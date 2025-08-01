@@ -24,17 +24,14 @@
         <h2>About Our Training</h2>
         <p>We offer industry-focused training in web development, programming, and more.</p>
         <figure>
-          <img src="training1.jpg" alt="Training Session" width="300">
+          <img src="training1.jpg" alt="Training Session">
           <figcaption>Real-time Training Environment</figcaption>
         </figure>
-      </article>
-    </section>
-  </main>
-  <div>
-<video controls width="348" height="360" style="margin: left 27px;">
-  <source src="videoplayback.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+        <video controls>
+          <source src="videoplayback.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
 
 <p style="text-align: center;">Your training will be there for 100+ working days</p>
 <p style="text-align: center;">Guaranteed placements.</p>
@@ -99,9 +96,24 @@
       margin: auto;
     }
 
-    figure {
-      margin-top: 20px;
-    }
+    <>
+  .media-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  figure, video {
+    max-width: 90%;
+    width: 300px;
+    height: auto;
+  }
+
+  figcaption {
+    text-align: center;
+    font-size: 1rem;
+  }
 
     figure img {
       width: 100%;
